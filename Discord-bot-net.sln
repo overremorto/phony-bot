@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Discord-bot-net", "Discord-bot-net\Discord-bot-net.csproj", "{88C81F54-4D47-48BE-B4FB-2B7775361A3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordBotNet.Models", "DiscordBotNet.Models\DiscordBotNet.Models.csproj", "{9BD08FF4-4680-42DF-9D13-F72EFF26FB8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordBotNet.Module", "DiscordBotNet.Commands\DiscordBotNet.Module.csproj", "{7AE111EF-9CF4-4AEA-81F8-53CD2F748AA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordBotNet.FileHelpers", "DiscordBotNet.FileHelpers\DiscordBotNet.FileHelpers.csproj", "{B084C6B6-B1EE-4144-B37D-0C5A8B19C123}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordBotNet.Tests", "DiscordBotNet.Tests\DiscordBotNet.Tests.csproj", "{795BFE49-5D3B-4830-9970-13F1A58BC076}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88C81F54-4D47-48BE-B4FB-2B7775361A3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88C81F54-4D47-48BE-B4FB-2B7775361A3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88C81F54-4D47-48BE-B4FB-2B7775361A3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88C81F54-4D47-48BE-B4FB-2B7775361A3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BD08FF4-4680-42DF-9D13-F72EFF26FB8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BD08FF4-4680-42DF-9D13-F72EFF26FB8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BD08FF4-4680-42DF-9D13-F72EFF26FB8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BD08FF4-4680-42DF-9D13-F72EFF26FB8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE111EF-9CF4-4AEA-81F8-53CD2F748AA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE111EF-9CF4-4AEA-81F8-53CD2F748AA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE111EF-9CF4-4AEA-81F8-53CD2F748AA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE111EF-9CF4-4AEA-81F8-53CD2F748AA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B084C6B6-B1EE-4144-B37D-0C5A8B19C123}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B084C6B6-B1EE-4144-B37D-0C5A8B19C123}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B084C6B6-B1EE-4144-B37D-0C5A8B19C123}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B084C6B6-B1EE-4144-B37D-0C5A8B19C123}.Release|Any CPU.Build.0 = Release|Any CPU
+		{795BFE49-5D3B-4830-9970-13F1A58BC076}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795BFE49-5D3B-4830-9970-13F1A58BC076}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795BFE49-5D3B-4830-9970-13F1A58BC076}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795BFE49-5D3B-4830-9970-13F1A58BC076}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
