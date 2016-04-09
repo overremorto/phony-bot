@@ -210,3 +210,12 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/Discord-bot-net/persistentData/youtube_settings.json
+/Discord-bot-net/persistentData/voice_settings.json
+/Discord-bot-net/persistentData/user_chatBotUserID.json
+/Discord-bot-net/persistentData/personality_forge_settings.json
+/Discord-bot-net/persistentData/dota_settings.json
+/Discord-bot-net/persistentData/dota_player_storage.json
+/Discord-bot-net/persistentData/dota_api_storage.json
+/Discord-bot-net/persistentData/discord_settings_dev.json
+/Discord-bot-net/persistentData/discord_settings.json

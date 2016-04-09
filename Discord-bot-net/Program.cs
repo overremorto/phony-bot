@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -47,9 +48,11 @@ namespace Discord_bot_net
             var pollTimer = 60000;
             var loginSettings = DiscordHelpers.GetDiscordSettings();
             // First of all, a DiscordClient will be created, and the email and password will be defined.
-            DiscordClient client = new DiscordClient();
-            client.ClientPrivateInformation.Email = loginSettings.Email;
-            client.ClientPrivateInformation.Password = loginSettings.Password;
+            DiscordClient client = new DiscordClient(tokenOverride: loginSettings.Token, isBotAccount: true);
+            
+            //DiscordClient client = new DiscordClient();
+            //client.ClientPrivateInformation.Email = loginSettings.Email;
+            //client.ClientPrivateInformation.Password = loginSettings.Password;
             LoadModules();
             // Then, we are going to set up our events before connecting to discord, to make sure nothing goes wrong.
 
@@ -59,9 +62,9 @@ namespace Discord_bot_net
                 // If the bot is connected, this message will show.
                 // Changes to client, like playing game should be called when the client is connected,
                 // just to make sure nothing goes wrong.
+                //client.ChangeClientAvatar((Bitmap)Bitmap.FromFile("C:\\Users\\Trevor\\Documents\\pancake-painter\\#714A00-path.jpg"));
                 client.UpdateCurrentGame("Bot online!"); // This will display at "Playing: "
             };
-
 
             client.PrivateMessageReceived += (sender, e) => // Private message has been received
             {
