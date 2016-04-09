@@ -1,0 +1,6 @@
+﻿{
+  "" { //  steam accountId is the key
+    "name": "", // name to show in discord
+    "accountId": "" //  steam accountId
+  }
+}

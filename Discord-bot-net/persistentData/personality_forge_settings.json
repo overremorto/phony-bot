@@ -1,0 +1,4 @@
+﻿{
+  "api_key": "", // personality forge api key
+  "chat_bot_id": "", // id of personality forge bot
+}

@@ -1,0 +1,28 @@
+﻿{
+  "available_voices": [
+    "Sharon",
+    "Ella (genuine child voice)",
+    "EmilioEnglish (genuine child voice)",
+    "Josh (genuine child voice)",
+    "Karen",
+    "Kenny (artificial child voice)",
+    "Laura",
+    "Micah",
+    "Nelly (artificial child voice)",
+    "Rod",
+    "Ryan",
+    "Saul",
+    "Scott (genuine teenager voice)",
+    "Tracy",
+    "ValeriaEnglish (genuine child voice)",
+    "Will",
+    "WillBadGuy (emotive voice)",
+    "WillFromAfar (emotive voice)",
+    "WillHappy (emotive voice)",
+    "WillLittleCreature (emotive voice)",
+    "WillOldMan (emotive voice)",
+    "WillSad (emotive voice)",
+    "WillUpClose (emotive voice)"
+  ],
+  "current_voice": "WillBadGuy (emotive voice)"
+}
