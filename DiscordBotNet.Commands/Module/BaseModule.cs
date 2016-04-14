@@ -21,6 +21,8 @@ namespace DiscordBotNet.Module.Module
 
         public string Prefix { get; private set; }
 
+        public bool ReadCommandless { get; private set; }
+
         public string PrefixToSearch
         {
             get
@@ -29,23 +31,33 @@ namespace DiscordBotNet.Module.Module
             }
         }
 
-        public BaseModule(string prefix, string name, string description)
+        public BaseModule(string prefix, string name, string description, bool readCommandless = false)
         {
             Prefix = prefix;
             Name = name;
             Description = description;
+            ReadCommandless = readCommandless;
             Commands = new List<ICommand>();
         }
 
         public virtual bool ExecuteModule(ISendWrapper sender)
         {
-            var prefix = PrefixToSearch.Length > sender.RemainingMessage.Length ? Prefix.ToLower() : PrefixToSearch;
-            if (!(sender.RemainingMessage?.ToLower().StartsWith(prefix) ?? false))
+            if (ReadCommandless && !sender.RemainingMessage.StartsWith(Prefix))
             {
-                return false;
+                // skip
             }
+            else
+            {
+                var prefix = PrefixToSearch.Length > sender.RemainingMessage.Length ? Prefix.ToLower() : PrefixToSearch;
+                if (!(sender.RemainingMessage?.ToLower().StartsWith(prefix) ?? false))
+                {
+                    return false;
+                }
+
+                sender.RemainingMessage = sender.RemainingMessage.Substring(prefix.Length);
+            }
+
             var wasCommandFound = false;
-            sender.RemainingMessage = sender.RemainingMessage.Substring(prefix.Length);
             foreach (var command in Commands)
             {
                 if (command.Execute(sender))

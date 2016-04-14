@@ -1,6 +1,26 @@
 ﻿{
-  "" { //  steam accountId is the key
-    "name": "", // name to show in discord
-    "accountId": "" //  steam accountId
+  "80708949": {
+    "name": "Muddy",
+    "accountId": "80708949",
+  },
+  "89224615": {
+    "name": "overremorto",
+    "accountId": "89224615",
+  },
+  "165338317": {
+    "name": "Izzy",
+    "accountId": "165338317",
+  },
+  "63701567": {
+    "name": "The Crab",
+    "accountId": "63701567",
+  },
+  "84923591": {
+    "name": "Retecer",
+    "accountId": "84923591",
+  },
+  "79793383": {
+    "name": "Bonanza",
+    "accountId": "79793383",
   }
 }

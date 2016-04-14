@@ -47,10 +47,12 @@
     <Compile Include="ChatBotHelpers.cs" />
     <Compile Include="DiscordHelpers.cs" />
     <Compile Include="DotaFileHelpers.cs" />
+    <Compile Include="FileHelper.cs" />
     <Compile Include="HtmlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StreamHelpers.cs" />
     <Compile Include="VoiceHelpers.cs" />
+    <Compile Include="WebAdventureHelpers.cs" />
     <Compile Include="YoutubeHelpers.cs" />
   </ItemGroup>
   <ItemGroup>

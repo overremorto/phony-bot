@@ -1,4 +1,6 @@
 ﻿{
-  "api_key": "", // personality forge api key
-  "chat_bot_id": "", // id of personality forge bot
+  "api_key": "LR2hvE9Zyq8i1MDq",
+  "chat_bot_id": "23969", // wizard
+  //"chat_bot_id": "23958", //prob
+  //"chat_bot_id": "2", //robot
 }

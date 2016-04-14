@@ -25,17 +25,9 @@ namespace Discord_bot_net
 {
     public class Program
     {
-        //private static string s_dotaApiKey = "8431BDA1561651D24886E034108C33FF";
-        //private static int s_mySteamAccountId = 89224615;
         private static Dictionary<string, string> s_userName_chatBotUserId = new Dictionary<string, string>();
         private static DiscordChannel s_currentChannel = null;
-
-        private static string s_apiKey = "LR2hvE9Zyq8i1MDq";
-        //private static int s_chatBot = 23969;// wizard
-        //private static int s_chatBot = 23958;// prob
-        private static int s_chatBot = 2;// robot
-
-        private static bool s_tts = false;
+        
         private static DiscordSettings s_settings;
 
         private static IModuleManager s_moduleManager;
@@ -119,6 +111,7 @@ namespace Discord_bot_net
             s_moduleManager.InstallModule(new PhonyTtsModule());
             s_moduleManager.InstallModule(new PhonyDotaModule());
             s_moduleManager.InstallModule(new PhonyMathModule());
+            s_moduleManager.InstallModule(new PhonyGameModule());
             s_moduleManager.InstallModule(new PhonyPhoneModule());
             s_moduleManager.InstallModule(new PhonyVoiceModule());
 

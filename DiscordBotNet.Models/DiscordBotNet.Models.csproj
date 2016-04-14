@@ -74,6 +74,9 @@
     <Compile Include="Dota\DotaPlayerStorage.cs" />
     <Compile Include="Dota\DotaSettings.cs" />
     <Compile Include="Dota\DotaStoredSettings.cs" />
+    <Compile Include="Game\ActiveGameModel.cs" />
+    <Compile Include="Game\GameModel.cs" />
+    <Compile Include="Game\GameResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Voice\SongResultModel.cs" />
     <Compile Include="Voice\VoiceSettings.cs" />

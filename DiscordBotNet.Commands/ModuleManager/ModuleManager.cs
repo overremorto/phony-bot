@@ -52,6 +52,16 @@ namespace DiscordBotNet.Module.ModuleManager
                     }
                 }
             }
+            else
+            {
+                foreach (var module in Modules.Where(m => m.ReadCommandless))
+                {
+                    if (module.ExecuteModule(sender))
+                    {
+                        break;
+                    }
+                }
+            }
         }
 
         public void Init()

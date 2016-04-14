@@ -23,12 +23,22 @@ namespace DiscordBotNet.FileHelpers
 
         public static string XmlSearch(string xml, string property)
         {
-
             var startIndex = xml.IndexOf($"{property}=\"") + $"{property}=\"".Length;
             var endIndex = xml.IndexOf("\"", startIndex);
             var value = xml.Substring(startIndex, endIndex - startIndex);
-            
+
             value = value.Substring(1, value.Length - 1);
+            return value;
+        }
+
+
+        public static string XmlSearch(string xml, string property, int idx)
+        {
+            var startIndex = xml.IndexOf($"{property}=\"", idx) + $"{property}=\"".Length;
+            var endIndex = xml.IndexOf("\"", startIndex);
+            var value = xml.Substring(startIndex, endIndex - startIndex);
+
+            value = value.Substring(0, value.Length);
             return value;
         }
 
@@ -47,6 +57,19 @@ namespace DiscordBotNet.FileHelpers
         {
             str = str.Substring(0, beforeIndex);
             return str.LastIndexOf("<");
+        }
+        public static int GetElementIndex(string str, string attribute, string value)
+        {
+            var searchString = $"{attribute}=\"{value}\"";
+            var idx = str.IndexOf(searchString);
+            return str.LastIndexOf("<", idx);
+        }
+
+        public static int GetLastElementIndex(string str, string attribute, string value)
+        {
+            var searchString = $"{attribute}=\"{value}\"";
+            var idx = str.LastIndexOf(searchString);
+            return str.LastIndexOf("<", idx);
         }
     }
 }

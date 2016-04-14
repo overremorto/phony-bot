@@ -64,6 +64,11 @@
     <Compile Include="Command\ChatCommand.cs" />
     <Compile Include="Command\DotaScanCommand.cs" />
     <Compile Include="Command\DotaLastMatchCommand.cs" />
+    <Compile Include="Command\Game\BaseGameCommand.cs" />
+    <Compile Include="Command\Game\QuitCommand.cs" />
+    <Compile Include="Command\Game\MessageCommand.cs" />
+    <Compile Include="Command\Game\StartCommand.cs" />
+    <Compile Include="Command\Game\ListCommand.cs" />
     <Compile Include="Command\HelpAllModulesCommand.cs" />
     <Compile Include="Command\HelpCommand.cs" />
     <Compile Include="Command\ICommand.cs" />
@@ -82,6 +87,7 @@
     <Compile Include="Module\BaseModule.cs" />
     <Compile Include="Module\HelpModule.cs" />
     <Compile Include="Module\IModule.cs" />
+    <Compile Include="Module\PhonyGameModule.cs" />
     <Compile Include="Module\PhonyMathModule.cs" />
     <Compile Include="Module\PhonyDotaModule.cs" />
     <Compile Include="Module\PhonyModule.cs" />

@@ -16,6 +16,7 @@ namespace DiscordBotNet.Module.Module
         string Prefix { get; }
 
         string Name { get; }
+        bool ReadCommandless { get; }
 
         string Description { get; }
 
@@ -27,5 +28,6 @@ namespace DiscordBotNet.Module.Module
         void AddCommand(ICommand command);
         void InsertCommand(int position, ICommand command);
         void RunContinuous();
+
     }
 }
